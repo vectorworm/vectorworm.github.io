@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <!--fonts: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,900&family=Source+Code+Pro&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- stylesheet -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="/gallery.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>gallery</title>
+  </head>
+  <body>
+
+    <div class="flexbox">
+      <header class="sidebar" id="menubar">
+        <div class="title_box"> <img id="title_image" src="./graphics/vector-worm.png" alt=""></div>
+
+        <nav>
+          <ul id="nav_lu" data-header="navigation">
+            <a href="index.html"><li>home</li></a>
+            <a href="art.html"><li>art</li></a>
+            <ul id="nav_lu_sub">
+              <a href="art-star_trek.html"><li>Star Trek</li></a>
+              <a href="#"><li>Re-Animator</li></a>
+              <a href="art-other_fanart.html"><li>other fanart</li></a>
+              <a href="art-original.html"><li>original</li></a>
+            </ul>
+            <a href=""><li>writing</li></a>
+            <a href=""><li>infodumpig (lol)</li></a>
+            <a href=""><li>miscelanious</li></a>
+            <a href=""><li>whatever</li></a>
+          </ul>
+        </nav>
+
+      </header>
+
+      <div class="mid">
+
+        <div class="sub_title_box">
+          <h1 class="sub_title"> Re-Animator fanart!</h1>
+        </div>
+
+        <div class="gallery_background">
+          <article>
+            <div class="gallery">
+              <div class="gallery_row">
+                <div class="gallery_column">
+                  <img src="./graphics/daniel-likes-girls.png" alt="" onclick="showImage(this)">
+                </div>
+                <div class="gallery_column">
+                  <img src="./graphics/morbid doodling with body parts.png" alt="" onclick="showImage(this)">
+                  <img src="./graphics/reanimator manga strips.png" alt="" onclick="showImage(this)">
+                  <img src="./graphics/Rufus.png" alt="" onclick="showImage(this)">
+                </div>
+                <div class="gallery_column">
+                  <img src="./graphics/Dr Hill 2.png" alt="" onclick="showImage(this)">
+                  <img src="./graphics/rewatch reanimator gif (slower).gif" alt="" onclick="showImage(this)">
+                  <img src="./graphics/daniel.png" alt="" onclick="showImage(this)">
+                </div>
+                <div class="gallery_column">
+                  <img src="./graphics/HAND FRIEND larger .png" alt="" onclick="showImage(this)">
+                </div>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+      <div class="sidebar"></div>
+
+    </div>
+
+    <footer>
+      <div class="footer_box"></div>
+    </footer>
+
+
+  <!-- import script -->
+  <script src="gallery.js" charset="utf-8"></script>
+  </body>
+</html>

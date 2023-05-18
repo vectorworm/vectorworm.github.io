@@ -1,0 +1,93 @@
+/* pre-defining colors as variables (easy access)*/
+:root{
+  --dark_grey_green: #101c15;
+  --light_purple: #bac3f5;
+  --link: #7487ed;
+  --nasty_yellow: #e3fc03;
+}
+
+/*
+importing fonts form google
+CSS rules to specify families
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Space Grotesk', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,900&family=Source+Code+Pro&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+body {
+  background-color: var(--dark_grey_green);
+  color: var(--light_purple);
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  color: var(--light_purple);
+}
+
+#nav_lu{
+  list-style-type: none;
+  color: var(--link);
+}
+#nav_lu_sub{
+  list-style-type: none;
+  padding: 2px;
+  font-size: 12px;
+  color: var(--nasty_yellow);
+}
+.flexbox{
+  display: flex;
+}
+
+.sidebar{
+  width: 25%;
+  height: 100%;
+}
+
+#menubar{
+  min-width: 150px;
+  padding-right: 10px;
+}
+
+#title_image{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.title_box{
+  font-family: 'Kanit', sans-serif;
+}
+
+.mid{
+    width: 75%;
+}
+
+.sub_title{
+  font-family: inherit;
+}
+
+.article1{
+  margin-top: 20px;
+  padding: 2%;
+  border-width: 1px;
+  border-style: dashed;
+  border-radius: 15px;
+}
+
+.article1_header{
+  color: var(--nasty_yellow);
+}
+.source_box{
+  color: var(--link);
+  font-family: 'Source Code Pro', monospace;
+  font-size: 12px;
+}
+
+footer{
+  padding: 2%;
+}
