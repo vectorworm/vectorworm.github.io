@@ -88,6 +88,21 @@ a:hover{
   font-size: 12px;
 }
 
-footer{
+.filler{
   padding: 2%;
+}
+
+footer{
+}
+.footer_box{
+  text-align: center;
+
+}
+.banner_box{
+  display: inline;
+}
+.banner{
+  width: 100%;
+  max-width: 200px;
+  padding: 1%;
 }
