@@ -105,11 +105,14 @@ gif_item{
   font-size: 12px;
 }
 
-footer{
+#footer_with_banners{
   text-align: center;
   padding: 1%;
   margin-top: 20px;
-  border-top: inset; 
+  border-top: inset;
   border-radius: 15px;
   border-width: thin;
+}
+footer{
+
 }
