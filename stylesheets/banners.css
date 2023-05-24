@@ -1,0 +1,8 @@
+.banner_box{
+  display: inline;
+}
+.banner{
+  width: 100%;
+  max-width: 100px;
+  padding: 0%;
+}

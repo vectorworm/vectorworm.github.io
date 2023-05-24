@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,900&family=Source+Code+Pro&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- stylesheet -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./stylesheets/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="./stylesheets/banners.css">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,89 +21,83 @@
   </head>
   <body>
 
-    <div class="flexbox">
-      <header class="sidebar" id="menubar">
-        <div class="title_box"> <img id="title_image" src="/graphics/vector-worm.png" alt=""></div>
+      <div class="flexbox">
 
-        <nav>
-          <ul id="nav_lu" data-header="navigation">
-            <a href="index.html"><li>home</li></a>
-            <a href="art.html"><li>art</li></a>
-            <a href=""><li>writing</li></a>
-            <a href=""><li>games</li></a>
-            <a href=""><li>Artificial Life</li></a>
-            <a href=""><li>whatever</li></a>
-          </ul>
-        </nav>
+        <!-- left sidebar (menu) -->
+        <header class="sidebar" id="menubar">
+          <div class="title_box"> <img id="title_image" src="/graphics/vector-worm.png" alt=""></div>
 
-      </header>
-
-      <div class="mid">
-
-        <div class="sub_title_box">
-          <h1 class="sub_title">Welcome to my Website :^)</h1>
-        </div>
-
-        <article class="article1">
-          <h2 class="article1_header">what's this website about?</h2>
-          <p class="article1_p">
-            actually just a place to dump all my hobbies in one place: <br>
-            <ul>
-              <li>digital art (trying to figure out comics rn)</li>
-              <li>indie games</li>
-              <li>horror movies (Jeffrey Combs 👀)</li>
-              <li>anything related to Artificial Life</li>
-              <li>i also want to get into creative writing</li>
-              <li>Star Trek stuff idk</li>
+          <nav>
+            <ul id="nav_lu" data-header="navigation">
+              <a href="index.html"><li>home</li></a>
+              <a href="art.html"><li>gallery</li></a>
+              <a href="writing.html"><li>writing</li></a>
+              <a href="queer_art.html">queer movies</a>
+              <a href=""><li>games</li></a>
+              <a href=""><li>Artificial Life</li></a>
+              <a href="whatever.html"><li>whatever</li></a>
             </ul>
-            But this is still under construction. so dont be too dissapointed if a link doesn't get you anywhere. <br>
-            the <a href="art.html" style="color: var(--link);">gallery</a> is finished though!
-          </p>
-        </article>
+          </nav>
 
-        <article class="article1">
-          <h2 class="article1_header">my interests</h2>
-          <p class="article_p">
-            coming soon :) <br>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-        </article>
-        <!--
-        <article class="article1">
-          <h2 class="article1_header">This is an article!</h2>
-          <p class="article1_p">
-            lorem ipsum bla bla bla bal ablab alsdjfkalsjdfa <br>
-            asfjalksjflkajsd fasdfjalskdfjasdfasdfa <br>
-            lorem ipsum bla bla bla bal ablab alsdjfkalsjdfa <br>
-            asfjalksjflkajsd fasdfjalskdfjasdfasdfa <br>
-            lorem ipsum bla bla bla bal ablab alsdjfkalsjdfa <br>
-            asfjalksjflkajsd fasdfjalskdfjasdfasdfa
-          </p>
-          <div class="source_box">
-            <p class="source_p"> this is a source now</p>
+        </header>
+
+        <div class="mid">
+
+          <div class="sub_title_box">
+            <h1 class="sub_title">Welcome to my Website :^)</h1>
           </div>
-        </article>
-      -->
-      </div>
+          <!-- intro -->
+          <article class="article1">
+            <h2 class="article1_header">what's this website about?</h2>
+            <p class="article1_p">
+              actually just a place to dump all my hobbies in one place: <br>
+              <ul>
+                <li>digital art (trying to figure out comics rn)</li>
+                <li>indie games</li>
+                <li>horror movies (Jeffrey Combs 👀)</li>
+                <li>anything related to Artificial Life</li>
+                <li>i also want to get into creative writing</li>
+                <li>Star Trek stuff idk</li>
+              </ul>
+              But this is still under construction. so dont be too dissapointed if a link doesn't get you anywhere. <br>
+              the <a href="art.html" style="color: var(--link);">gallery</a> is finished though!
+            </p>
+          </article>
+          <!-- interests -->
+          <article class="article1">
+            <h2 class="article1_header">thinks i like <3</h2>
+            <p class="article_p">
+              coming soon :)
+            </p>
+          </article>
 
-      <div class="sidebar">
-      </div>
-
-    </div>
-
-    <div class="filler"></div>
-
-    <footer>
-      <div class="footer_box">
-        <div class="banner_box">
-          <img src="./graphics/rewatch reanimator gif (slower).gif" alt="" class="banner">
-          <img src="./graphics/if i dont watch a horror movie.gif" alt="" class="banner">
-          <img src="./graphics/resonator.jpg" alt="" class="banner">
-          <img src="./graphics/miss 2000.webp" alt="" class="banner">
         </div>
-      </div>
-    </footer>
 
+        <!-- right sidebar -->
+        <div class="sidebar gif_box">
+          <img src="./graphics/spinning pc.webp" alt="" class="gif_item">
+          <img src="./graphics/spinning floppy.webp" alt="" class="gif_item">
+
+        </div>
+
+      </div>
+
+
+      <!-- footer -->
+      <footer>
+          <div class="banner_box">
+            <img src="./graphics/rewatch reanimator gif (slower).gif" alt="" class="banner">
+            <img src="./graphics/resonator.jpg" alt="" class="banner">
+            <img src="./graphics/000010.gif" alt="" class="banner">
+            <img src="./graphics/cyber-rot.png" alt="" class="banner">
+            <img src="./graphics/duck.gif" alt="" class="banner">
+            <img src="./graphics/eyes.gif" alt="" class="banner">
+            <img src="./graphics/fuck-yeah-it-hurts.png" alt="" class="banner">
+            <img src="./graphics/internetfree.gif" alt="" class="banner">
+            <img src="./graphics/simply irresistable.webp" alt="" class="banner">
+            <img src="./graphics/this webside is gay.webp" alt="" class="banner">
+          </div>
+      </footer>
 
 
   </body>

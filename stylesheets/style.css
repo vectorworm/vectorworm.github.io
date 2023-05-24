@@ -19,6 +19,12 @@ body {
   background-color: var(--dark_grey_green);
   color: var(--light_purple);
   font-family: 'Space Grotesk', sans-serif;
+  margin: 0;
+
+  /* sticker footer  */
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
 a{
@@ -47,6 +53,16 @@ a:hover{
 .sidebar{
   width: 25%;
   height: 100%;
+}
+
+.sidebar.gif_box{
+  display: inline;
+  text-align: center;
+}
+
+gif_item{
+  width: 100%;
+  max-width: 400px;
 }
 
 #menubar{
@@ -88,21 +104,6 @@ a:hover{
   font-size: 12px;
 }
 
-.filler{
-  padding: 2%;
-}
-
 footer{
-}
-.footer_box{
   text-align: center;
-
-}
-.banner_box{
-  display: inline;
-}
-.banner{
-  width: 100%;
-  max-width: 200px;
-  padding: 1%;
 }

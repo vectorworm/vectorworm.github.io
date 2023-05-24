@@ -1,0 +1,22 @@
+.movie_flexbox{
+  display: flex;
+  padding-left: 3%;
+  padding-right: 3%
+}
+.movie_title{
+  /*height: 20%;
+  height: auto;
+  max-height:100px;*/
+  border-radius: 15px;
+  width: 70%;
+  height: 70%;
+}
+.movie_credentials{
+  width: 100%;
+}
+
+.movie_poster{
+  width: auto;
+  max-width: 200px;
+
+}
