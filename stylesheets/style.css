@@ -4,6 +4,7 @@
   --light_purple: #bac3f5;
   --link: #7487ed;
   --nasty_yellow: #e3fc03;
+  --grey: #a0a0a0;
 }
 
 /*
@@ -106,4 +107,9 @@ gif_item{
 
 footer{
   text-align: center;
+  padding: 1%;
+  margin-top: 20px;
+  border-top: inset; 
+  border-radius: 15px;
+  border-width: thin;
 }
