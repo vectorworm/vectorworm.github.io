@@ -4,7 +4,7 @@
   --light_purple: #bac3f5;
   --link: #7487ed;
   --nasty_yellow: #e3fc03;
-  --grey: #a0a0a0;
+  --grey: #303030;
 }
 
 /*
@@ -17,7 +17,7 @@ CSS rules to specify families
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,900&family=Source+Code+Pro&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 body {
-  background-color: var(--dark_grey_green);
+  background-color: var(--grey);
   color: var(--light_purple);
   font-family: 'Space Grotesk', sans-serif;
   margin: 0;
@@ -49,6 +49,14 @@ a:hover{
 }
 .flexbox{
   display: flex;
+  padding-bottom: 5%;
+
+  background-color: var(--dark_grey_green);
+
+  border-radius: 15px;
+  border-width: medium;
+  border-bottom: inset;
+  border-color: var(--nasty_yellow);
 }
 
 .sidebar{
@@ -105,14 +113,18 @@ gif_item{
   font-size: 12px;
 }
 
+.slap-tap-pick-on{
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+
 #footer_with_banners{
+  margin-top: 20px;
   text-align: center;
   padding: 1%;
-  margin-top: 20px;
-  border-top: inset;
-  border-radius: 15px;
-  border-width: thin;
+
 }
 footer{
-
 }
