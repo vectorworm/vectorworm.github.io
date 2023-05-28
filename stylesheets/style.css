@@ -89,7 +89,7 @@ gif_item{
 }
 
 .mid{
-    width: 75%;
+    width: 100%;
 }
 
 .sub_title{
@@ -127,4 +127,31 @@ gif_item{
 
 }
 footer{
+}
+
+
+/* responsive design: */
+@media screen and (max-width: 600px){
+  .sidebar{
+    display: none;
+  }
+  #menubar{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .flexbox{
+    display: block;
+  }
+  #title_image{
+    width: 20%;
+  }
+  #nav_lu a{
+    display: inline-table;
+    padding: 0.5%;
+    margin: 1%;
+    border-style: groove;
+    border-radius: 10px;
+  }
 }
