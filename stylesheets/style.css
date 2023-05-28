@@ -137,7 +137,7 @@ footer{
   }
   #menubar{
     display: inline-block;
-    width: 100%;
+    width: auto;
     height: auto;
     text-align: center;
   }
