@@ -129,6 +129,19 @@ gif_item{
 footer{
 }
 
+/* 404 page*/
+#back_button{
+  background-color: var(--link);
+  border: none;
+  text-align: center;
+  color: var(--dark_grey_green);
+  border-style: inset;
+  border-radius: 15px;
+  padding: 10px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 12px;
+}
+
 
 /* responsive design: */
 @media screen and (max-width: 600px){
