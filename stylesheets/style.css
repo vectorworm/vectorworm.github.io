@@ -64,14 +64,15 @@ a:hover{
   height: 100%;
 }
 
-.sidebar.gif_box{
+.sidebar#right_sidebar{
   display: inline;
   text-align: center;
+  padding-top: 50px;
 }
 
 gif_item{
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
 }
 
 #menubar{
@@ -176,6 +177,9 @@ footer{
     display: block;
   }
   .sidebar{
+    display: none;
+  }
+  .gif_item{
     display: none;
   }
   #menubar{
