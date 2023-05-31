@@ -75,8 +75,8 @@ gif_item{
   max-width: 300px;
 }
 
-#menubar{
-  min-width: 150px;
+.sidebar#menubar{
+  min-width: 200px;
   padding-right: 10px;
 }
 
@@ -165,7 +165,7 @@ footer{
 
 
 /* responsive design: */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 650px){
   .flexbox{
     display: block;
     padding: 2%;
