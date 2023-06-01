@@ -102,6 +102,9 @@ gif_item{
 .sub_title{
   font-family: inherit;
 }
+#error_name{
+  font-family: 'Space Grotesk', sans-serif;
+}
 
 .article1{
   margin-top: 20px;
