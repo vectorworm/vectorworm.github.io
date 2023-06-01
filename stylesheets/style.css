@@ -31,7 +31,7 @@ body {
 /* links: */
 a{
   text-decoration: none;
-  color: inherit;
+  color: var(--link)
 }
 
 a:hover{
@@ -77,13 +77,6 @@ gif_item{
   border-radius: 15px;
   font-family: 'Source Code Pro', monospace;
   font-size: 14px;
-}
-.log a{
-  text-decoration: none;
-  color: var(--link);
-}
-.log a:hover{
-  color: var(--light_purple);
 }
 
 /* left */
