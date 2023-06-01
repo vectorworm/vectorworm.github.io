@@ -101,13 +101,17 @@ gif_item{
 /* navigation*/
 #nav_lu{
   list-style-type: none;
-  color: var(--link);
 }
 #nav_lu_sub{
   list-style-type: none;
   padding: 2px;
   font-size: 12px;
+}
+#nav_lu_sub a{
   color: var(--nasty_yellow);
+}
+#nav_lu_sub a:hover{
+  color: var(--light_purple);
 }
 
 
