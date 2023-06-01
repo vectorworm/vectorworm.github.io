@@ -28,6 +28,7 @@ body {
   grid-template-rows: 1fr auto;
 }
 
+/* links: */
 a{
   text-decoration: none;
   color: inherit;
@@ -37,16 +38,7 @@ a:hover{
   color: var(--light_purple);
 }
 
-#nav_lu{
-  list-style-type: none;
-  color: var(--link);
-}
-#nav_lu_sub{
-  list-style-type: none;
-  padding: 2px;
-  font-size: 12px;
-  color: var(--nasty_yellow);
-}
+/* flexbox*/
 .flexbox{
   display: flex;
   padding-bottom: 5%;
@@ -59,27 +51,45 @@ a:hover{
   border-color: var(--nasty_yellow);
 }
 
+/* sidebars */
 .sidebar{
   width: 25%;
   height: 100%;
 }
-
+/* right */
 .sidebar#right_sidebar{
   display: inline;
   text-align: center;
   padding-top: 50px;
+  padding: 1%;
 }
 
 gif_item{
   width: 100%;
   max-width: 300px;
 }
+.log{
+  padding: 3%;
+  text-align: left;
+  border: dashed;
+  border-width: thin;
+  border-radius: 15px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+}
+.log a{
+  text-decoration: none;
+  color: var(--link);
+}
+.log a:hover{
+  color: var(--light_purple);
+}
 
+/* left */
 .sidebar#menubar{
   min-width: 200px;
   padding-right: 10px;
 }
-
 
 .title_box{
   font-family: 'Kanit', sans-serif;
@@ -94,7 +104,20 @@ gif_item{
   max-height: 100%;
   display: none;
 }
+/* navigation*/
+#nav_lu{
+  list-style-type: none;
+  color: var(--link);
+}
+#nav_lu_sub{
+  list-style-type: none;
+  padding: 2px;
+  font-size: 12px;
+  color: var(--nasty_yellow);
+}
 
+
+/* mid */
 .mid{
     width: 100%;
 }
@@ -102,10 +125,8 @@ gif_item{
 .sub_title{
   font-family: inherit;
 }
-#error_name{
-  font-family: 'Space Grotesk', sans-serif;
-}
 
+/* article 1*/
 .article1{
   margin-top: 20px;
   padding: 2%;
@@ -140,16 +161,18 @@ gif_item{
   align-self: center;
 }
 
+/* footer */
 #footer_with_banners{
   margin-top: 20px;
   text-align: center;
   padding: 1%;
 
 }
-footer{
-}
 
 /* 404 page*/
+#error_name{
+  font-family: 'Source Code Pro', monospace;
+}
 #back_button{
   background-color: var(--link);
   border: none;
@@ -168,18 +191,30 @@ footer{
 
 
 /* responsive design: */
-@media screen and (max-width: 650px){
+@media screen and (max-width: 700px){
   .flexbox{
-    display: block;
+    display: inline-block;
     padding: 2%;
+    text-align: center;
+  }
+  .mid{
+    text-align: left;
+  }
+  .title_box{
+    text-align: center;
+    width: 100%;
   }
   .title_box #title_image{
     display: none;
   }
   .title_box #title_image_mobile{
-    display: block;
+    display: inline-block;
   }
   .sidebar{
+    display: none;
+  }
+  #right_sidebar{
+    width: 100%;
     display: none;
   }
   .gif_item{
