@@ -143,8 +143,10 @@ gif_item{
 }
 .artile1_img{
   border-radius: 15px;
-  width: 200px;
-  max-width: 75%;
+  height: 200px;
+  max-height: 75%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 .source_box{
   color: var(--link);
