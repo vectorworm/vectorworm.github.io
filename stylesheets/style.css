@@ -148,6 +148,11 @@ gif_item{
   margin-left: 2%;
   margin-right: 2%;
 }
+
+#t-counter{
+  background: white;
+  border-radius: 15px;
+}
 .source_box{
   color: var(--link);
   font-family: 'Source Code Pro', monospace;
