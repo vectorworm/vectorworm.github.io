@@ -1,0 +1,14 @@
+.sub_gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+}
+
+.sub_gallery figure {
+}
+
+.sub_gallery img{
+  width: 30vw;
+  margin: auto;
+  display: block;
+}
