@@ -1,62 +1,74 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>vectorworm</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function() {
+            $("#load_header_template").load("header_template.html");
+            $("#load_footer_template").load("footer_template.html");
+        });
+    </script>
+</head>
+<body id="index_page">
+<div class="frame">
+    <div class="screen">
 
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/preview.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/autoload_nav.js"></script>
-
-  </head>
-  <body>
-    <div class="flexbox">
-
-      <nav id="nav" class="navigation"></nav>
-
-      <div class="not_nav">
-
-        <header>
-          ( •̀ ω •́ )✧
+        <header id="load_header_template">
         </header>
-        <div class="padding_under_header">
+
+        <div class="content">
+            <div class="article_grid">
+
+                <article class="grid-item-1-3">
+                    <div class="article_heading">
+                        <h2 class="highlighted">hello world</h2>
+                        <p class="date">2025-01-26</p>
+                    </div>
+                    <hr>
+                    <p class="article_text">...and welcome to my webage!</p>
+                    <p class="article_text">My name is Felix, I'm in my mid-20s (as of writing this introduction). I'm a game dev, horror-enthusiast, and transgender furry. </p>
+                    <p class="article_text">This webside will be a space for me to showcase my projects, share my interest, and have fun!</p>
+                    <p class="article_text">Feel free to browse around. On the right -> you can find some other cool websites.</p>
+                </article>
+
+                <article class="grid-item-1-1">
+                    <div class="article_heading">
+                        <h2>cool links!</h2>
+                        <p class="date">2025-01-26</p>
+                    </div>
+                    <hr>
+                    <ul>
+                        <li><a href="https://int10h.org/oldschool-pc-fonts/">the oldschool pc font resource</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1h-I3udUxdjoo43NWBVyLDr-iSj_KPzC-?usp=drive_link">star trek repository</a></li>
+                        <li><a href="http://patorjk.com/software/taag">text to ascii art generator</a></li>
+                    </ul>
+                </article>
+
+                <article class="grid-item-1-4">
+                    <img src="imgs/stamps/trans%20rights%20now.webp" alt="">
+                    <img src="imgs/stamps/industrial_music.gif" alt="">
+                    <img src="imgs/stamps/flesh.png" alt="">
+                    <img src="imgs/stamps/fight_club.jpg" alt="">
+                    <img src="imgs/stamps/dead_ringers1.gif" alt="">
+                    <img src="imgs/stamps/scanner.gif" alt="">
+                    <img src="imgs/stamps/im%20a%20horror%20maniac%20who%20prefers%20to%20stay%20at%20home%20stamp.png" alt="">
+                </article>
+            </div>
+
 
         </div>
 
-        <main>
-          <div class="gallery">
-
-            <figure>
-              <a href="puppy-isle.html">
-                <img src="gallery\games\puppy isle poster.png" alt="">
-                <p><b>PUPPY ISLE</b>: <br>a games based on cellular automata.</p>
-              </a>
-            </figure>
-            <figure>
-              <a href="alien-vm.html">
-                <img src="/gallery/AlienVM.png" alt="">
-                <p><b>AlienVM:</b> <br> a space shooter game utilizing Craig Reynolds'<b>boids</b>.</p>
-              </a>
-            </figure>
-            <figure>
-              <a href="body-jumper.html">
-                <img src="/gallery\games\body jumper title screen v1 scaledx2.png" alt="">
-                <p><b>BODY JUMPER:</b><br>demo version of a short horror game dealing with gender dysphoria - my very first game actually.</p>
-              </a>
-            </figure>
-
-
-
-          </div>
-        </main>
+        <footer id="load_footer_template">
+        </footer>
 
     </div>
 
-  </div>
-  <footer>footer</footer>
-  </body>
+</div>
+
+
+</body>
 </html>
