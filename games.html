@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function() {
+            $("#load_header_template").load("header_template.html");
+            $("#load_footer_template").load("footer_template.html");
+        });
+    </script>
+</head>
+<body id="games_page">
+<div class="frame">
+    <div class="screen">
+
+        <header id="load_header_template">
+        </header>
+
+        <div class="content">
+            <div class="games_grid">
+
+                <article id="puppy_isle" class="game_container">
+                    <div class="description">
+                        <div class="article_heading">
+                            <h2 class="highlighted">Puppy Isle</h2>
+                            <p class="date">2023-10-03</p>
+                        </div>
+                        <hr>
+                        <p class="game_text">
+                            <a href="https://dirtfly.itch.io/puppy-isle">link</a>
+                        </p>
+                    </div>
+
+                    <img src="img/thumbnails/puppy%20isle%20poster.png" alt="">
+                </article>
+
+                <!-- ALIEN VM -->
+                <article id="alien_vm" class="game_container">
+                    <div class="description">
+                        <div class="article_heading">
+                            <h2 class="highlighted">AlienVM</h2>
+                            <p class="date">2023-09-15</p>
+                        </div>
+
+                        <hr>
+                        <p class="game_text">
+                            <a href="https://dirtfly.itch.io/alien-vm">link</a>
+                        </p>
+                    </div>
+
+                    <img src="img/thumbnails/AlienVM.png" alt="">
+                </article>
+
+
+                <!-- BODY JUMPER DEMO 2022 -->
+                <article id="body_jumper_demo" class="game_container">
+                    <div class="description">
+                        <div class="article_heading">
+                            <h2 class="highlighted">BODY JUMPER demo</h2>
+                            <p class="date">2022-10-02</p>
+                        </div>
+                        <hr>
+                        <p class="game_text">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                            <a href="https://dirtfly.itch.io/body-jumper">link</a>
+                        </p>
+                    </div>
+
+                    <img src="img/thumbnails/body_jumper_poster.png" alt="">
+                </article>
+
+
+            </div>
+
+        </div>
+
+        <footer id="load_footer_template">
+        </footer>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

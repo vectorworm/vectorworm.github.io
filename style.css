@@ -61,11 +61,11 @@ html, body {
 
     /* border */
     border: 35px solid;
-    border-image: url("imgs/tv_PNG39220_3.png") 50;
+    border-image: url("img/tv_PNG39220_3.png") 50;
 
     @media only screen and (max-width: 600px) {
         border: 10px solid;
-        border-image: url("imgs/tv_PNG39220_3.png") 50;
+        border-image: url("img/tv_PNG39220_3.png") 50;
     }
 }
 
@@ -171,6 +171,11 @@ header{
     border-color: var(--green_glow);
 }
 
+#games_page .games_page a{
+    color: var(--green_glow);
+    border-color: var(--green_glow);
+}
+
 .content {
     /* page flow: */
     flex: 1; /* take up remaining space and allow the footer to stick */
@@ -217,7 +222,7 @@ header{
                 /* page flow */
                 padding: 3px;
                 color: var(--green_glow);
-                text-shadow: 0 0 3px var(--green_glow)
+                text-shadow: 0 0 2px var(--green_glow)
             }
         }
 
@@ -229,6 +234,14 @@ header{
             font-size: 20px;
         }
 
+        .highlighted_text{
+            padding: 1px;
+
+            background-color: var(--green_glow);
+            color: var(--screen-color);
+            text-shadow: 1px 1px 5px var(--screen-color);
+        }
+
         /*img*/
         img{
             max-width: 100%;
@@ -236,9 +249,15 @@ header{
 
         /* links */
         a{
-            color: inherit;
-            text-decoration: inherit;
-            font-style: inherit;
+            color: var(--green);
+            background-color: inherit;
+            font-style: italic;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: var(--green_glow);
+            background-color: var(--blue);
         }
 
         a::after{
@@ -259,7 +278,13 @@ header{
                 font-style: italic;
             }
 
+            a{
+                color: var(--green);
+                background-color: inherit;
+            }
+
             a:hover{
+                color: var(--green_glow);
                 background-color: var(--blue);
             }
 
@@ -271,16 +296,13 @@ header{
 .article_grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /*grid-auto-rows: 1fr;*/
     grid-gap: 1%;
 
     @media only screen and (max-width: 900px) {
         grid-template-columns: 1fr 1fr 1fr;
-        /*grid-auto-rows: 1fr;*/
     }
     @media only screen and (max-width: 600px) {
         grid-template-columns: 1fr;
-        /*grid-auto-rows: 1fr;*/
     }
 
 
@@ -361,6 +383,62 @@ header{
 }
 
 
+/* GAMES GRID */
+.games_grid{
+    /*page flow*/
+    width: 100%;
+    min-height: 0;
+    /*grid*/
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+    article{
+        /*page flow*/
+        width: 100%;
+        min-height: 0;
+
+        .description{
+            display: inline-block;
+            width: 70%;
+
+
+            .game_text{
+                font-family: IBM_MODEL_3X_ALT4, monospace;
+                font-size: 20px;
+
+                a{
+                    color: var(--green_glow);
+                }
+            }
+        }
+
+
+        img{
+            display: inline-block;
+            position: relative;
+            float: right;
+            width: 27%;
+
+            border-radius: 10px;
+
+        }
+
+    }
+
+    #body_jumper_demo{
+        background: #583477;
+    }
+
+    #alien_vm{
+        background: #030303;
+        color: #FFFF6B;
+    }
+
+    #puppy_isle{
+        background: #0A3188;
+        color: hotpink;
+    }
+}
 
 
 
