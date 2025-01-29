@@ -109,6 +109,7 @@ header{
     /* title */
     pre{
         /*text*/
+        font-family: monospace;
         font-size: 15px;
         color: var(--red);
         text-shadow: 0 0  10px var(--red_glow);
@@ -184,6 +185,10 @@ header{
     /* border */
     border: 2px solid var(--green_glow);
     border-radius: 10px;
+
+    .gallery_article{
+        border: 0;
+    }
 
     article{
         /* page flow */
@@ -274,12 +279,13 @@ header{
                 /* page flow */
                 margin: 1% 0 0 1%;
 
-                /*text*/
-                font-style: italic;
             }
 
             a{
+                /*text*/
+                font-style: italic;
                 color: var(--green);
+
                 background-color: inherit;
             }
 
@@ -353,6 +359,7 @@ header{
         grid-template-columns: repeat(1, minmax(0, 1fr));
         grid-auto-rows: 1fr;
     }
+
 
     .gallery_image{
         /*grid-row: span 1;*/
