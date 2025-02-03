@@ -1,12 +1,25 @@
 /* consts */
 :root{
     --background-color : black;
+    /*
     --screen-color : #1e1904;
     --screen-reflextion: #402e09;
+*/
+    --screen-color : #030d1e;
+    --screen-reflextion: #0c1735;
+    /*
+    --screen-color : #587add;
+    --screen-reflextion: #7a9fef;
+     */
     --red: #ce1827;
     --red_glow: #e03c4a;
-    --green: #42a032;
-    --green_glow: #a6ed76;
+
+    --text_main: #42a032;
+    --text_main_glow: #a6ed76;
+
+    --text_main: #95a031;
+    --text_main_glow: white;
+
     --blue: #0300fa;
     --yellow: #856d25;
     --yellow2: #656439;
@@ -62,6 +75,10 @@ html, body {
     /* border */
     border: 35px solid;
     border-image: url("img/tv_PNG39220_3.png") 50;
+    /*
+    border-image: url("img/tv_PNG39220_2.png") 50;
+     */
+
 
     @media only screen and (max-width: 600px) {
         border: 10px solid;
@@ -88,11 +105,11 @@ html, body {
 
     /* text */
     font-family: IMB_BIOS_Y2, monospace;
-    color: var(--green);
+    color: var(--text_main);
 
     hr{
-        border-top: 2px solid var(--green);
-        color: var(--green);
+        border-top: 2px solid var(--text_main);
+        color: var(--text_main);
         margin: 5px 0 5px 0;
     }
 
@@ -107,20 +124,26 @@ header{
     text-align: center;
 
     /* title */
-    pre{
-        /*text*/
-        font-family: monospace;
-        font-size: 15px;
-        color: var(--red);
-        text-shadow: 0 0  10px var(--red_glow);
+    .title_container{
+        text-align: center;
 
-        @media only screen and (max-width: 900px) {
-            font-size: 9px;
-        }
-        @media only screen and (max-width: 600px) {
-            font-size: 3px;
+        pre{
+            /*text*/
+            text-align: center;
+            font-family: monospace;
+            font-size: 15px;
+            color: var(--red);
+            text-shadow: 0 0  10px var(--red_glow);
+
+            @media only screen and (max-width: 900px) {
+                font-size: 9px;
+            }
+            @media only screen and (max-width: 600px) {
+                font-size: 3px;
+            }
         }
     }
+
 
     /* menu */
     nav{
@@ -143,7 +166,7 @@ header{
                 padding: 5px;
 
                 /* boder */
-                border: solid 2px var(--green);
+                border: solid 2px var(--text_main);
                 border-bottom: 0;
                 border-radius: 15px 15px 0 0;
 
@@ -154,8 +177,8 @@ header{
                 text-transform: uppercase;
             }
             a:hover{
-                color: var(--green_glow);
-                border-color: var(--green_glow);
+                color: var(--text_main_glow);
+                border-color: var(--text_main_glow);
             }
         }
     }
@@ -163,18 +186,18 @@ header{
 
 /* highlight nav of current page */
 #index_page .index_page a{
-    color: var(--green_glow);
-    border-color: var(--green_glow);
+    color: var(--text_main_glow);
+    border-color: var(--text_main_glow);
 }
 
 #gallery_page .gallery_page a{
-    color: var(--green_glow);
-    border-color: var(--green_glow);
+    color: var(--text_main_glow);
+    border-color: var(--text_main_glow);
 }
 
 #games_page .games_page a{
-    color: var(--green_glow);
-    border-color: var(--green_glow);
+    color: var(--text_main_glow);
+    border-color: var(--text_main_glow);
 }
 
 .content {
@@ -183,7 +206,7 @@ header{
     padding: 1%;
 
     /* border */
-    border: 2px solid var(--green_glow);
+    border: 2px solid var(--text_main_glow);
     border-radius: 10px;
 
     .gallery_article{
@@ -195,7 +218,7 @@ header{
         padding: 2%;
 
         /* border */
-        border: 2px solid var(--green);
+        border: 2px solid var(--text_main);
         border-radius: 10px;
 
         .article_heading{
@@ -219,15 +242,15 @@ header{
 
                 /* text */
                 font-size: 20px;
-                color: var(--green);
+                color: var(--text_main);
 
             }
 
             h2.highlighted{
                 /* page flow */
                 padding: 3px;
-                color: var(--green_glow);
-                text-shadow: 0 0 2px var(--green_glow)
+                color: var(--text_main_glow);
+                text-shadow: 0 0 2px var(--text_main_glow)
             }
         }
 
@@ -242,7 +265,7 @@ header{
         .highlighted_text{
             padding: 1px;
 
-            background-color: var(--green_glow);
+            background-color: var(--text_main_glow);
             color: var(--screen-color);
             text-shadow: 1px 1px 5px var(--screen-color);
         }
@@ -254,14 +277,14 @@ header{
 
         /* links */
         a{
-            color: var(--green);
+            color: var(--text_main);
             background-color: inherit;
             font-style: italic;
             text-decoration: none;
         }
 
         a:hover{
-            color: var(--green_glow);
+            color: var(--text_main_glow);
             background-color: var(--blue);
         }
 
@@ -284,13 +307,13 @@ header{
             a{
                 /*text*/
                 font-style: italic;
-                color: var(--green);
+                color: var(--text_main);
 
                 background-color: inherit;
             }
 
             a:hover{
-                color: var(--green_glow);
+                color: var(--text_main_glow);
                 background-color: var(--blue);
             }
 
@@ -404,6 +427,8 @@ header{
         width: 100%;
         min-height: 0;
 
+        border: 0;
+
         .description{
             display: inline-block;
             width: 70%;
@@ -414,7 +439,7 @@ header{
                 font-size: 20px;
 
                 a{
-                    color: var(--green_glow);
+                    color: var(--text_main_glow);
                 }
             }
         }
