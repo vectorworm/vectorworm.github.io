@@ -200,6 +200,11 @@ header{
     border-color: var(--text_main_glow);
 }
 
+#devlog_page .devlog_page a{
+    color: var(--text_main_glow);
+    border-color: var(--text_main_glow);
+}
+
 .content {
     /* page flow: */
     flex: 1; /* take up remaining space and allow the footer to stick */
