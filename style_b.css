@@ -4,6 +4,8 @@
     --light: #839187;
     --darker: #393E3A;
 
+    --pink: #FF66CD;
+
 
     --article-border-radius: 5px;
 }
@@ -53,7 +55,7 @@ body{
 
 .title_container{
     text-align: center;
-    color: white;
+    color: var(--pink);
     text-shadow: 0 0 10px cadetblue;
 
     hr{
@@ -417,9 +419,6 @@ nav{
 
             background-color: var(--dark);
 
-        }
-        a:after{
-            content: ' ↝';
         }
     }
 }
