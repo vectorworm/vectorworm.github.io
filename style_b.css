@@ -180,7 +180,7 @@ nav{
         min-height: 0;
         min-width: 0;
 
-        border: 0px;
+        border: 0;
 
         @media only screen and (max-width: 900px) {
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -196,28 +196,26 @@ nav{
             /*grid-row: span 1;*/
 
             display: block;
-            max-width: 20vw;
             max-height: 31vh;
             padding: 5px;
+            margin: 5px;
 
-            @media only screen and (max-width: 900px) {
-                max-width: 40vw;
-            }
-            @media only screen and (max-width: 600px) {
-                max-width: 40vw;
-            }
+            border: ridge var(--light);
+            background-color: var(--dark);
 
-            /*
-            min-height: 0;
-            min-width: 0;
-            overflow: hidden;
-            */
 
             img{
                 display: block;
-                max-width: inherit;
+                max-width: 20vw;
                 max-height: 28vh;
                 margin: auto;
+
+                @media only screen and (max-width: 900px) {
+                    max-width: 40vw;
+                }
+                @media only screen and (max-width: 700px) {
+                    max-width: 80vw;
+                }
 
                 object-fit: contain;
             }
