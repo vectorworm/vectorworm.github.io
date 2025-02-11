@@ -226,6 +226,7 @@ header{
         border: 2px solid var(--text_main);
         border-radius: 10px;
 
+
         .article_heading{
             width: 100%;
             display: inline-block;
