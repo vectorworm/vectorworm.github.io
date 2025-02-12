@@ -50,6 +50,12 @@ body{
     /* background */
     background-color: var(--dark);
 
+
+    hr{
+        color: var(--darker );
+        background-color: var(--darker);
+        border-color: var(--darker);
+    }
 }
 
 
@@ -59,7 +65,18 @@ body{
     text-shadow: 0 0 10px cadetblue;
 
     hr{
-        color: var(--dark);
+        color: var(--dark) !important;
+        background-color: var(--dark) !important;
+        border-color: var(--dark) !important;
+    }
+
+    font-size: 15px;
+
+    @media only screen and (max-width: 900px) {
+        font-size: 10px;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 5px;
     }
 }
 
@@ -97,6 +114,10 @@ nav{
             /* border */
             border: outset var(--light);
             border-bottom: none;
+
+            @media only screen and (max-width: 600px) {
+                font-size: 12px;
+            }
 
         }
 
@@ -386,6 +407,10 @@ nav{
         img{
             max-height: 35px;
         }
+
+        #visitor_counter{
+            display: inline-block;
+        }
     }
 
     #cool-links{
@@ -428,10 +453,17 @@ footer{
     width: 100%;
     padding: 5px 0;
 
+
     /* text */
     text-align: center;
 
     p {
         margin: 0;
+    }
+
+    hr{
+        color: var(--dark) !important;
+        background-color: var(--dark) !important;
+        border-color: var(--dark) !important;
     }
 }
