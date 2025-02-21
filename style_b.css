@@ -339,6 +339,7 @@ nav{
                 border: inset var(--light);
             }
         }
+
     }
 
     article{
@@ -395,6 +396,19 @@ nav{
             a:before{
                 content:'☠ ';
             }
+        }
+
+    }
+
+    /* TABLE */
+    table{
+        width: 100%;
+        border: 2px solid var(--dark);
+        background-color: var(--dark);
+        th, td{
+            padding: 0px 2px 0px 2px;
+            border: 2px solid var(--dark);
+            background-color: var(--light);
         }
     }
 
