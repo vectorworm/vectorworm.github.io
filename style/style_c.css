@@ -5,7 +5,8 @@
     /*--light: #42312b;*/
     --light: #352e2b;
     /*--lighter: #99837b;*/
-    --lighter: #a39792;
+    --lighter: #afa4a0;
+    --less_lighter: #8e817c;
 
     --green: #B4CE39;
     --pink: #FF66CD;
@@ -30,6 +31,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* selection */
+::-moz-selection{
+    color: var(--darker);
+    background-color: var(--green);
+}
+::selection{
+    color: var(--darker);
+    background-color: var(--green);
 }
 
 body{
@@ -63,20 +74,20 @@ body{
     hr{
         color: var(--darker );
         background-color: var(--darker);
-        border-color: var(--darker);
+        border: solid var(--darker);
     }
 }
 
 
 .title_container{
     text-align: center;
-    color: var(--green);
+    color: var(--pink);
     text-shadow: 0 0 10px cadetblue;
 
     hr{
         color: var(--dark) !important;
         background-color: var(--dark) !important;
-        border-color: var(--dark) !important;
+        border: solid var(--dark) !important;
     }
 
     font-size: 15px;
@@ -240,7 +251,7 @@ nav{
             padding: 5px;
             margin: 5px;
 
-            border: ridge var(--light);
+            border: solid var(--light);
             background-color: var(--dark);
 
 
@@ -371,6 +382,10 @@ nav{
                 border: inset var(--light);
             }
 
+            a:visited{
+                color: var(--less_lighter);
+            }
+
         }
 
     }
@@ -379,7 +394,8 @@ nav{
 
         background-color: var(--light);
 
-        border: groove var(--light);
+        /*border: groove var(--light);*/
+        border: solid var(--dark);
         border-radius: var(--article-border-radius);
 
         .article_heading{
@@ -390,7 +406,7 @@ nav{
             background-color: var(--darker);
             color: var(--green);
 
-            border: groove var(--darker);
+            border: solid var(--darker);
             border-bottom: none;
             border-top-left-radius: var(--article-border-radius);
             border-top-right-radius: var(--article-border-radius);
@@ -433,6 +449,7 @@ nav{
 
         a.link_button:hover{
             border: inset var(--dark);
+            border-color: var(--green);
         }
 
         ul{
@@ -524,6 +541,6 @@ footer{
     hr{
         color: var(--dark) !important;
         background-color: var(--dark) !important;
-        border-color: var(--dark) !important;
+        border: solid var(--dark) !important;
     }
 }
