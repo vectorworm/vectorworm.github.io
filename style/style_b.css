@@ -1,5 +1,6 @@
 /* COLORS */
 :root{
+
     --dark: #728278;
     --light: #839187;
     --darker: #393E3A;
@@ -12,7 +13,7 @@
 
 @font-face {
     font-family : IMB_BIOS_Y2;
-    src: url('Fonts/WebPlus_IBM_BIOS-2y.woff');
+    src: url('../Fonts/WebPlus_IBM_BIOS-2y.woff');
 }
 
 
