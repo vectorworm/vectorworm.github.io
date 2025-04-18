@@ -264,6 +264,7 @@ nav{
                 text-align: center;
             }
 
+            /*
             a{
                 border: outset var(--dark);
                 background-color: var(--dark);
@@ -273,6 +274,8 @@ nav{
             a:hover{
                 border: inset var(--dark);
             }
+            */
+
 
         }
     }
@@ -304,6 +307,7 @@ nav{
                     font-size: 16px;
                     padding: 10px;
 
+                    /*
                     a{
                         border: outset var(--dark);
                         background-color: var(--dark);
@@ -313,6 +317,8 @@ nav{
                     a:hover{
                         border: inset var(--dark);
                     }
+                    */
+
 
                 }
             }
@@ -419,6 +425,15 @@ nav{
             padding: 5px 2% 5px 2%;
         }
 
+        a.link_button{
+            border: outset var(--dark);
+            background-color: var(--dark);
+            color: var(--lighter);
+        }
+
+        a.link_button:hover{
+            border: inset var(--dark);
+        }
 
         ul{
             list-style-type: none;
