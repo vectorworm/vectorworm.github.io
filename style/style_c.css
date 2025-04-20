@@ -170,6 +170,11 @@ nav{
     border-bottom: none;
 }
 
+#music_page .music_page a{
+    border: inset var(--light);
+    border-bottom: none;
+}
+
 
 .content{
     flex: 1; /* take up remaining space and allow the footer to stick */
@@ -459,6 +464,73 @@ nav{
                 content:'☠ ';
             }
         }
+
+        .inner_article_grid_3{
+            width: 100%;
+
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-auto-rows: 1fr;
+            grid-auto-flow: row dense;
+
+            @media only screen and (max-width: 900px) {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                grid-auto-rows: 1fr;
+            }
+            @media only screen and (max-width: 600px) {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+                grid-auto-rows: 1fr;
+            }
+
+
+            .inner_article_grid_item{
+                display: block;
+                border: 1px solid var(--light);
+                aspect-ratio: 1300/900;
+                overflow: scroll;
+
+                div{
+                    padding-left: 2px;
+                    padding-right: 2px;
+                }
+
+                .iframe_container{
+                    padding: 0;
+
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    width: 100%;
+                    max-width: 700px;
+                }
+
+                .iframe_video_container{
+                    aspect-ratio: 1300/731;
+
+                    .video_embed{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .description_container{
+
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 1%;
+
+                    width: 100%;
+                    max-width: 700px;
+
+                    border: 3px solid var(--darker);
+                    border-bottom: none;
+                    color: var(--green);
+
+                }
+
+            }
+        }
+
 
 
     }
